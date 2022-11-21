@@ -32,3 +32,88 @@ carol_candies = 109
 (alice_candies + bob_candies + carol_candies) % 3
 
 
+
+#function in python 
+def least_difference(a, b, c):
+    diff1 = abs(a - b)
+    diff2 = abs(b - c)
+    diff3 = abs(a - c)
+    return min(diff1, diff2, diff3)
+
+
+def round_to_two_places(num):
+    """Return the given number rounded to two decimal places. 
+    
+    >>> round_to_two_places(3.14159)
+    3.14
+    """
+    # Replace this body with your own code.
+    # ("pass" is a keyword that does literally nothing. We used it as a placeholder
+    # because after we begin a code block, Python requires at least one line of code)
+    return round (num , 2)
+    
+    
+    
+    
+    #booleans
+    #true or and false
+    def inspect(x):
+    if x == 0:
+        print(x, "is zero")
+    elif x > 0:
+        print(x, "is positive")
+    elif x < 0:
+        print(x, "is negative")
+    else:
+        print(x, "is unlike anything I've ever seen...")
+
+inspect(0)
+inspect(-15)
+
+
+#list in python
+planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+print(planets)
+len(planets)
+planets.append('Pluto')
+
+
+
+###
+
+The for loop specifies
+
+    the variable name to use (in this case, planet)
+    the set of values to loop over (in this case, planets)
+
+You use the word "in" to link them together.
+
+The object to the right of the "in" can be any object that supports iteration. Basically, if it can be thought of as a group of things, you can probably loop over it. In addition to lists, we can iterate over the elements of a tuple:
+####
+for i in range(5):
+    print("Doing important work. i =", i)
+    
+    
+###while loops
+
+The other type of loop in Python is a while loop, which iterates until some condition is met:###
+
+i = 0
+while i < 10:
+    print(i, end=' ')
+    i += 1 # increase the value of i by 1
+    
+    ###
+Strings
+
+One place where the Python language really shines is in the manipulation of strings. This section will cover some of Python's built-in string methods and formatting operations.
+
+Such string manipulation patterns come up often in the context of data science work.###
+
+
+###Dictionaries
+
+Dictionaries are a built-in Python data structure for mapping keys to values.###
+
+
+numbers = {'one':1, 'two':2, 'three':3}
