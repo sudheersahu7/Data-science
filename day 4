@@ -1,0 +1,17 @@
+import pandas as pd
+
+reviews = pd.read_csv("../input/wine-reviews/winemag-data-130k-v2.csv", index_col=0)
+pd.set_option("display.max_rows", 5)
+reviews.head()
+desc = reviews.description
+first_description = reviews.description.iloc[0]
+first_row = reviews.iloc[0]
+first_descriptions = reviews.description.iloc[0:10]
+indices = [1, 2, 3, 5, 8]
+sample_reviews = reviews.iloc[indices]
+columns = ['country','province','region_1','region_2']
+index =[0, 1, 10, 100]
+df = reviews.loc[index ,columns]
+cols = ['country', 'variety']
+df = reviews.loc[:99, cols]
+italian_wines = reviews[reviews.country == 'Italy']
