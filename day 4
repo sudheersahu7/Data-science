@@ -15,3 +15,7 @@ df = reviews.loc[index ,columns]
 cols = ['country', 'variety']
 df = reviews.loc[:99, cols]
 italian_wines = reviews[reviews.country == 'Italy']
+top_oceania_wines = reviews.loc[
+    (reviews.country.isin(['Australia', 'New Zealand']))
+    & (reviews.points >= 95)
+]
